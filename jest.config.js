@@ -1,10 +1,11 @@
 module.exports = {
   testEnvironment: 'node',
-  projects: [
-    '<rootDir>/packages/core',
-    '<rootDir>/packages/cli',
+  testMatch: [
+    '**/__tests__/**/*.js',
   ],
-  moduleDirectories: [
-    'node_modules',
-  ],
+  testEnvironmentOptions: {
+    "node_modules": [
+      "packages/cli/node_modules"
+    ]
+  }
 };
