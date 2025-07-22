@@ -1,12 +1,19 @@
 {
-  "name": "cli",
+  "name": "@gemini-snake/cli",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "bin": {
+    "gemini-snake": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "@gemini-snake/core": "workspace:*",
+    "yargs": "^18.0.0"
+  }
 }
