@@ -8,11 +8,6 @@
     "skipLibCheck": true,
     "outDir": "./dist"
   },
-<<<<<<< HEAD
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
-=======
-  "include": ["src/**/*"]
-}
->>>>>>> ee36ff2df8358b1ef8c35b2ce574bb802b0f1dc3
