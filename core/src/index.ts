@@ -1,3 +1,4 @@
+
 interface Task {
   id: string;
   title: string;
@@ -8,7 +9,7 @@ const tasks: Task[] = [];
 
 export function createTask(title: string): Task {
   const newTask: Task = {
-    id: Math.random().toString(36).substr(2, 9), // Simple unique ID
+    id: String(tasks.length + 1),
     title,
     completed: false,
   };
@@ -17,7 +18,7 @@ export function createTask(title: string): Task {
 }
 
 export function listTasks(): Task[] {
-  return [...tasks]; // Return a copy to prevent external modification
+  return [...tasks];
 }
 
 export function deleteTask(id: string): boolean {
@@ -25,7 +26,6 @@ export function deleteTask(id: string): boolean {
   const index = tasks.findIndex(task => task.id === id);
   if (index !== -1) {
     tasks.splice(index, 1);
-    return true;
   }
-  return false;
+  return tasks.length < initialLength;
 }
