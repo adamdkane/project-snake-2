@@ -8,5 +8,11 @@
     "skipLibCheck": true,
     "outDir": "./dist"
   },
+<<<<<<< HEAD
   "include": ["src/**/*"]
 }
+=======
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
+>>>>>>> 518b2bd (feat: Implement gemini-cli-run package structure and mock function)
